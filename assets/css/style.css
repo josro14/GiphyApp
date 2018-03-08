@@ -1,0 +1,29 @@
+.jumbotron {
+    background: url("../images/source.gif")
+}
+
+.jumbotron h1 {
+    color: #00FF99;
+    font-family: 'Bowlby One SC', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+body {
+    background: rgb(250, 112, 94);
+}
+
+.my-form {
+    text-align: center;
+}
+h3, label {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #00CCFF;
+    text-shadow: 2px 2px 2px black;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #00CCFF;
+    text-shadow: 2px 2px 2px black;
+}
