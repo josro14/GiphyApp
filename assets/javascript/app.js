@@ -14,7 +14,6 @@ function displayGif() {
 
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-            //making div to hold the displayed gif
             var gifDiv = $("<div class='theGIF'>");
             var rating = results[i].rating;
             var rateDisp = $("<p>").text("Rating: " + rating);
@@ -24,5 +23,26 @@ function displayGif() {
             $("#gif-spot").prepend(gifDiv);
         }
     });
-
 }
+
+function renderButtons() {
+    $("#btn-spot").empty();
+    for (var i = 0; i < gifArr.length; i++) {
+        var b = $("<button>");
+        b.addClass("gif-btn");
+        b.attr("data-name", gifArr[i]);
+        b.text(gifArr[i]);
+        $("#btn-spot").append(b);
+    }
+}
+
+$("#add-gif").on("click", function (event) {
+    event.preventDefault();
+    var theGIF = $("#gif-input").val().trim();
+    gifArr.push(theGIF);
+    renderButtons();
+});
+
+$(document).on("click", ".gif-btn", displayGif);
+
+renderButtons();
