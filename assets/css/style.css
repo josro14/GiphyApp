@@ -8,7 +8,7 @@
     text-shadow: 2px 2px 2px black;
 }
 body {
-    background: rgb(250, 112, 94);
+    background: #FF6767;
 }
 
 .my-form {
@@ -26,4 +26,34 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
     color: #00CCFF;
     text-shadow: 2px 2px 2px black;
+}
+
+button, #add-gif {
+    background-color: #00CCFF; 
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#add-gif {
+    padding: 5px;
+    background-color: #F5EA58;
+}
+
+
+#gif-input {
+    border-radius: 5px;
+}
+
+#theGIF {
+    float: left;
+    margin: 10px;
 }
